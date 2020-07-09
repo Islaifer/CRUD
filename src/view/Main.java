@@ -43,15 +43,16 @@ public class Main extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		
-		JButton btnEnter = new JButton("Entrar");
-		btnEnter.setBounds(304, 253, 148, 31);
-		contentPane.add(btnEnter);
+		setResizable(false);
 		
 		JLabel lblWelcome = new JLabel("Bem-Vindo ^-^");
 		lblWelcome.setFont(new Font("Arial", Font.PLAIN, 32));
 		lblWelcome.setBounds(279, 131, 211, 86);
 		contentPane.add(lblWelcome);
+		
+		JButton btnEnter = new JButton("Entrar");
+		btnEnter.setBounds(304, 253, 148, 31);
+		contentPane.add(btnEnter);
 		
 		JButton btnExit = new JButton("Sair");
 		btnExit.setBounds(304, 364, 148, 31);
