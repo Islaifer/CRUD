@@ -47,6 +47,9 @@ public class InsaneMain extends JFrame {
 		JButton btnAddEnterprise = new JButton("Adicionar Empresa");
 		btnAddEnterprise.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				Register register = new Register();
+				register.setVisible(true);
+				dispose();
 			}
 		});
 		btnAddEnterprise.setBounds(759, 41, 158, 23);

@@ -4,8 +4,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
-import javax.swing.JFormattedTextField;
 import javax.swing.JLabel;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 
 public class Register extends JFrame {
@@ -154,6 +157,13 @@ public class Register extends JFrame {
 		
 		JButton btnSave = new JButton("Salvar");
 		btnSave.setBounds(835, 397, 115, 29);
+		btnSave.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				InsaneMain main = new InsaneMain();
+				main.setVisible(true);
+				dispose();
+			}
+		});
 		contentPane.add(btnSave);
 		
 		JButton btnAddPat = new JButton("Cadastrar Socio");
