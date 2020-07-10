@@ -7,7 +7,11 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class Main extends JFrame {
 
@@ -38,7 +42,7 @@ public class Main extends JFrame {
 	 */
 	public Main() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 827, 517);
+		setBounds(100, 100, 1024, 517);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -47,19 +51,39 @@ public class Main extends JFrame {
 		
 		JLabel lblWelcome = new JLabel("Bem-Vindo ^-^");
 		lblWelcome.setFont(new Font("Arial", Font.PLAIN, 32));
-		lblWelcome.setBounds(279, 131, 211, 86);
+		lblWelcome.setBounds(388, 151, 211, 86);
 		contentPane.add(lblWelcome);
 		
 		JButton btnEnter = new JButton("Entrar");
-		btnEnter.setBounds(304, 253, 148, 31);
+		btnEnter.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				InsaneMain main = new InsaneMain();
+				main.setVisible(true);
+				dispose();
+			}
+		});
+		btnEnter.setBounds(415, 248, 148, 31);
 		contentPane.add(btnEnter);
 		
 		JButton btnExit = new JButton("Sair");
-		btnExit.setBounds(304, 364, 148, 31);
+		btnExit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnExit.setBounds(415, 364, 148, 31);
 		contentPane.add(btnExit);
 		
 		JButton btnCredits = new JButton("Cr\u00E9ditos");
-		btnCredits.setBounds(304, 308, 148, 31);
+		btnCredits.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane.showMessageDialog(null, "Creditos:\n"
+						+ "Adryen Simoes de Oliveira"
+						+ " - Desenvolvedor\n"
+						+ "Mateus Massami Ribeiro - Desenvolvedor e engenheiro de software");
+			}
+		});
+		btnCredits.setBounds(415, 308, 148, 31);
 		contentPane.add(btnCredits);
 	}
 }

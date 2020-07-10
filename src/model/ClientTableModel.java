@@ -17,6 +17,10 @@ public class ClientTableModel extends AbstractTableModel {
 		this.list = list;
 	}
 	
+	public ClientTableModel() {
+		super();
+	}
+	
 	@Override
 	public String getColumnName(int column) {
 		return columns[column];
@@ -29,7 +33,11 @@ public class ClientTableModel extends AbstractTableModel {
 
 	@Override
 	public int getRowCount() {
-		return list.size();
+		if(list == null) {
+			return 0;
+		}else {
+			return list.size();
+		}
 	}
 
 	@Override
