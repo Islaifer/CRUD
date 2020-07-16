@@ -10,6 +10,12 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextPane;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+
+
 
 public class Display extends JFrame {
 
@@ -40,13 +46,13 @@ public class Display extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblFantasyName = new JLabel("Raz\u00E3o Social");
-		lblFantasyName.setBounds(15, 16, 108, 20);
-		panel.add(lblFantasyName);
+		JLabel lblName = new JLabel("Raz\u00E3o Social");
+		lblName.setBounds(15, 16, 108, 20);
+		panel.add(lblName);
 		
-		JLabel lblNewFantasyName = new JLabel("Fantasia");
-		lblNewFantasyName.setBounds(282, 16, 69, 20);
-		panel.add(lblNewFantasyName);
+		JLabel lblFantasyName = new JLabel("Fantasia");
+		lblFantasyName.setBounds(282, 16, 69, 20);
+		panel.add(lblFantasyName);
 		
 		JTextPane textFantasyName = new JTextPane();
 		textFantasyName.setEditable(false);
@@ -199,6 +205,7 @@ public class Display extends JFrame {
 		panel_1.add(lblTaxPost);
 		
 		JTextPane textActSta = new JTextPane();
+		textActSta.setEditable(false);
 		textActSta.setBounds(805, 35, 139, 26);
 		panel_1.add(textActSta);
 		
@@ -207,6 +214,7 @@ public class Display extends JFrame {
 		panel_1.add(lblActSta);
 		
 		JTextPane textTaxReg = new JTextPane();
+		textTaxReg.setEditable(false);
 		textTaxReg.setBounds(480, 87, 151, 26);
 		panel_1.add(textTaxReg);
 		
@@ -215,6 +223,7 @@ public class Display extends JFrame {
 		panel_1.add(lblTaxReg);
 		
 		JTextPane textRegOff = new JTextPane();
+		textRegOff.setEditable(false);
 		textRegOff.setBounds(646, 87, 154, 26);
 		panel_1.add(textRegOff);
 		
@@ -223,11 +232,82 @@ public class Display extends JFrame {
 		panel_1.add(lblRegOff);
 		
 		JTextPane textISS = new JTextPane();
+		textISS.setEditable(false);
 		textISS.setBounds(707, 35, 82, 26);
 		panel_1.add(textISS);
 		
 		JLabel lblISS = new JLabel("ISS");
 		lblISS.setBounds(707, 15, 37, 20);
 		panel_1.add(lblISS);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBounds(15, 290, 972, 142);
+		contentPane.add(panel_2);
+		panel_2.setLayout(null);
+		
+		JTextPane textPName = new JTextPane();
+		textPName.setEditable(false);
+		textPName.setBounds(15, 35, 179, 20);
+		panel_2.add(textPName);
+		
+		JLabel lblPName = new JLabel("Nome do Socio");
+		lblPName.setBounds(15, 15, 76, 20);
+		panel_2.add(lblPName);
+		
+		JTextPane textPRG = new JTextPane();
+		textPRG.setEditable(false);
+		textPRG.setBounds(204, 35, 116, 20);
+		panel_2.add(textPRG);
+		
+		JLabel lblPRG = new JLabel("RG");
+		lblPRG.setBounds(204, 18, 46, 14);
+		panel_2.add(lblPRG);
+		
+		JLabel lblPCPF = new JLabel("CPF");
+		lblPCPF.setBounds(330, 18, 46, 14);
+		panel_2.add(lblPCPF);
+		
+		JTextPane textPCPF = new JTextPane();
+		textPCPF.setBounds(330, 35, 125, 20);
+		panel_2.add(textPCPF);
+		
+		JTextPane textPCNH = new JTextPane();
+		textPCNH.setBounds(471, 35, 76, 20);
+		panel_2.add(textPCNH);
+		
+		JLabel lblPCNH = new JLabel("CNH");
+		lblPCNH.setBounds(471, 18, 46, 14);
+		panel_2.add(lblPCNH);
+		
+		JLabel lblPPIS = new JLabel("PIS");
+		lblPPIS.setBounds(555, 18, 46, 14);
+		panel_2.add(lblPPIS);
+		
+		JTextPane textPPIS = new JTextPane();
+		textPPIS.setBounds(557, 35, 95, 20);
+		panel_2.add(textPPIS);
+		
+		JTextPane textPDatBir = new JTextPane();
+		textPDatBir.setBounds(662, 35, 95, 20);
+		panel_2.add(textPDatBir);
+		
+		JLabel lblPDatBir = new JLabel("Data de Nascimento");
+		lblPDatBir.setBounds(662, 18, 116, 14);
+		panel_2.add(lblPDatBir);
+		
+		JButton btnPrint = new JButton("Imprimir");
+		btnPrint.setBounds(15, 444, 89, 23);
+		contentPane.add(btnPrint);
+		
+		JButton btnQuit = new JButton("Sair");
+		btnQuit.setBounds(898, 443, 89, 23);
+		btnQuit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				InsaneMain main = new InsaneMain();
+				main.setVisible(true);
+				dispose();
+			}
+		});
+		contentPane.add(btnQuit);
 	}
 }

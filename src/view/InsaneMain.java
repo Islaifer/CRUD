@@ -14,6 +14,7 @@ import javax.swing.border.EmptyBorder;
 
 import model.ClientTableModel;
 
+
 public class InsaneMain extends JFrame {
 
 	/**
@@ -32,12 +33,13 @@ public class InsaneMain extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(null);
 		
 		table = new JTable();
+		table.setBounds(1, 26, 834, 0);
 		table.setShowVerticalLines(false);
 		table.setRowHeight(32);
 		dataModel = new ClientTableModel();
+		contentPane.setLayout(null);
 		table.setModel(dataModel);
 		contentPane.add(table);
 		JScrollPane scroll = new JScrollPane(table);
@@ -45,6 +47,7 @@ public class InsaneMain extends JFrame {
 		contentPane.add(scroll);
 		
 		JButton btnAddEnterprise = new JButton("Adicionar Empresa");
+		btnAddEnterprise.setBounds(759, 41, 158, 23);
 		btnAddEnterprise.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Register register = new Register();
@@ -52,13 +55,36 @@ public class InsaneMain extends JFrame {
 				dispose();
 			}
 		});
-		btnAddEnterprise.setBounds(759, 41, 158, 23);
 		contentPane.add(btnAddEnterprise);
 		
 		JComboBox<String> filter = new JComboBox<String>();
 		filter.setBounds(81, 42, 171, 20);
 		filter.addItem("All");
 		contentPane.add(filter);
+		
+		JButton btnDisplay = new JButton("Exibir Cadastro");
+		btnDisplay.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			Display display = new Display ();
+			display.setVisible(true);
+			dispose();
+			}
+		});
+		btnDisplay.setBounds(593, 41, 140, 23);
+		contentPane.add(btnDisplay);
+		
+		JButton btnEdit = new JButton("Editar Cadastro");
+		btnEdit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Edit edit = new Edit();
+				edit.setVisible(true);
+				dispose();
+			}
+		});
+		btnEdit.setBounds(426, 41, 140, 23);
+		contentPane.add(btnEdit);
+		
+		
 		
 		
 		

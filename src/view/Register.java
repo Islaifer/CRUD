@@ -147,9 +147,9 @@ public class Register extends JFrame {
 		lblHNumber.setBounds(619, 229, 69, 20);
 		contentPane.add(lblHNumber);
 		
-		JTextPane textPane = new JTextPane();
-		textPane.setBounds(746, 249, 120, 26);
-		contentPane.add(textPane);
+		JTextPane textComp = new JTextPane();
+		textComp.setBounds(746, 249, 120, 26);
+		contentPane.add(textComp);
 		
 		JLabel lblComp = new JLabel("Complemento");
 		lblComp.setBounds(746, 229, 120, 20);
