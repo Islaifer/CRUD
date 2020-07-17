@@ -61,7 +61,6 @@ public class PRegister extends JFrame {
 		JTextPane textPName = new JTextPane();
 		textPName.setBounds(26, 50, 263, 20);
 		contentPane.add(textPName);
-		textPName.setEditable(false);
 		
 		JLabel lblPName = new JLabel("Nome do Socio");
 		lblPName.setBounds(26, 30, 134, 20);
@@ -70,7 +69,6 @@ public class PRegister extends JFrame {
 		JTextPane textPRG = new JTextPane();
 		textPRG.setBounds(65, 107, 116, 20);
 		contentPane.add(textPRG);
-		textPRG.setEditable(false);
 		
 		JLabel lblPRG = new JLabel("RG");
 		lblPRG.setBounds(65, 90, 46, 14);
@@ -83,12 +81,10 @@ public class PRegister extends JFrame {
 		JTextPane textPCPF = new JTextPane();
 		textPCPF.setBounds(191, 107, 125, 20);
 		contentPane.add(textPCPF);
-		textPCPF.setEditable(false);
 		
 		JTextPane textPCNH = new JTextPane();
 		textPCNH.setBounds(370, 107, 76, 20);
 		contentPane.add(textPCNH);
-		textPCNH.setEditable(false);
 		
 		JLabel lblPCNH = new JLabel("CNH");
 		lblPCNH.setBounds(370, 90, 46, 14);
@@ -101,12 +97,10 @@ public class PRegister extends JFrame {
 		JTextPane textPPIS = new JTextPane();
 		textPPIS.setBounds(456, 107, 95, 20);
 		contentPane.add(textPPIS);
-		textPPIS.setEditable(false);
 		
 		JTextPane textPDatBir = new JTextPane();
 		textPDatBir.setBounds(604, 107, 151, 20);
 		contentPane.add(textPDatBir);
-		textPDatBir.setEditable(false);
 		
 		JLabel lblPDatBir = new JLabel("Data de Nascimento");
 		lblPDatBir.setBounds(604, 90, 151, 14);
@@ -119,7 +113,6 @@ public class PRegister extends JFrame {
 		JTextPane textPVotReg = new JTextPane();
 		textPVotReg.setBounds(806, 107, 137, 20);
 		contentPane.add(textPVotReg);
-		textPVotReg.setEditable(false);
 		
 		JLabel lblPAddress = new JLabel("Endere\u00E7o");
 		lblPAddress.setBounds(26, 143, 69, 20);
@@ -128,7 +121,6 @@ public class PRegister extends JFrame {
 		JTextPane textPAddress = new JTextPane();
 		textPAddress.setBounds(26, 163, 302, 26);
 		contentPane.add(textPAddress);
-		textPAddress.setEditable(false);
 		
 		JLabel lblPNeig = new JLabel("Bairro");
 		lblPNeig.setBounds(352, 143, 69, 20);
@@ -137,7 +129,6 @@ public class PRegister extends JFrame {
 		JTextPane textPNeig = new JTextPane();
 		textPNeig.setBounds(352, 163, 199, 26);
 		contentPane.add(textPNeig);
-		textPNeig.setEditable(false);
 		
 		JLabel lblPCEP = new JLabel("CEP");
 		lblPCEP.setBounds(582, 143, 69, 20);
@@ -146,7 +137,6 @@ public class PRegister extends JFrame {
 		JTextPane textPCEP = new JTextPane();
 		textPCEP.setBounds(582, 163, 167, 26);
 		contentPane.add(textPCEP);
-		textPCEP.setEditable(false);
 		
 		JTextPane textPCity = new JTextPane();
 		textPCity.setBounds(779, 163, 188, 26);
@@ -159,7 +149,6 @@ public class PRegister extends JFrame {
 		JTextPane textPPosition = new JTextPane();
 		textPPosition.setBounds(849, 344, 94, 20);
 		contentPane.add(textPPosition);
-		textPPosition.setEditable(false);
 		
 		JLabel lblPPosition = new JLabel("Posi\u00E7\u00E3o ");
 		lblPPosition.setBounds(849, 327, 94, 14);
@@ -168,7 +157,6 @@ public class PRegister extends JFrame {
 		JTextPane textPDatIssRG = new JTextPane();
 		textPDatIssRG.setBounds(65, 344, 95, 20);
 		contentPane.add(textPDatIssRG);
-		textPDatIssRG.setEditable(false);
 		
 		JLabel lblPDatIssRG = new JLabel("Data do RG");
 		lblPDatIssRG.setBounds(65, 324, 95, 14);
@@ -181,12 +169,10 @@ public class PRegister extends JFrame {
 		JTextPane textPEmitOrgRG = new JTextPane();
 		textPEmitOrgRG.setBounds(212, 344, 100, 20);
 		contentPane.add(textPEmitOrgRG);
-		textPEmitOrgRG.setEditable(false);
 		
 		JTextPane textPane = new JTextPane();
 		textPane.setBounds(551, 253, 302, 20);
 		contentPane.add(textPane);
-		textPane.setEditable(false);
 		
 		JLabel lblPMotName = new JLabel("Nome da M\u00E3e");
 		lblPMotName.setBounds(551, 233, 102, 14);
@@ -207,7 +193,6 @@ public class PRegister extends JFrame {
 		JTextPane textPNatural = new JTextPane();
 		textPNatural.setBounds(702, 344, 115, 20);
 		contentPane.add(textPNatural);
-		textPNatural.setEditable(false);
 		
 		JLabel lblPMarSta = new JLabel("Estado Civil");
 		lblPMarSta.setBounds(360, 324, 117, 14);
