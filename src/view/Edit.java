@@ -166,6 +166,13 @@ public class Edit extends JFrame {
 		contentPane.add(btnSave);
 
 		JButton btnAddPat = new JButton("Cadastrar Socio");
+		btnAddPat.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				PRegister pregister = new PRegister();
+				pregister.setVisible(true);
+				dispose();
+			}
+		});
 		btnAddPat.setBounds(45, 384, 142, 29);
 		contentPane.add(btnAddPat);
 

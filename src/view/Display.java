@@ -43,7 +43,7 @@ public class Display extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panelData = new JPanel();
-		panelData.setBounds(15, 16, 972, 118);
+		panelData.setBounds(15, 0, 972, 118);
 		contentPane.add(panelData);
 		panelData.setLayout(null);
 		
@@ -119,7 +119,7 @@ public class Display extends JFrame {
 		panelData.add(lblCity);
 		
 		JPanel panelLegaci = new JPanel();
-		panelLegaci.setBounds(15, 150, 972, 129);
+		panelLegaci.setBounds(15, 134, 972, 129);
 		contentPane.add(panelLegaci);
 		panelLegaci.setLayout(null);
 		
@@ -242,7 +242,7 @@ public class Display extends JFrame {
 		panelLegaci.add(lblISS);
 		
 		panelPatners = new JPanel();
-		panelPatners.setBounds(15, 290, 972, 142);
+		panelPatners.setBounds(15, 274, 972, 142);
 		contentPane.add(panelPatners);
 		panelPatners.setLayout(null);
 		
@@ -252,7 +252,7 @@ public class Display extends JFrame {
 		panelPatners.add(textPName);
 		
 		JLabel lblPName = new JLabel("Nome do Socio");
-		lblPName.setBounds(10, 0, 76, 20);
+		lblPName.setBounds(10, 0, 142, 20);
 		panelPatners.add(lblPName);
 		
 		JTextPane textPRG = new JTextPane();
@@ -414,11 +414,11 @@ public class Display extends JFrame {
 		panelPatners.add(lblPParticipation);
 		
 		JButton btnPrint = new JButton("Imprimir");
-		btnPrint.setBounds(15, 444, 89, 23);
+		btnPrint.setBounds(15, 427, 133, 23);
 		contentPane.add(btnPrint);
 		
 		JButton btnQuit = new JButton("Sair");
-		btnQuit.setBounds(898, 443, 89, 23);
+		btnQuit.setBounds(898, 427, 89, 23);
 		btnQuit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				InsaneMain main = new InsaneMain();
