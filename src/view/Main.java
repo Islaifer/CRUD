@@ -42,7 +42,7 @@ public class Main extends JFrame {
 	 */
 	public Main() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1024, 517);
+		setBounds(100, 100, 1127, 517);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -51,7 +51,7 @@ public class Main extends JFrame {
 		
 		JLabel lblWelcome = new JLabel("Bem-Vindo ^-^");
 		lblWelcome.setFont(new Font("Arial", Font.PLAIN, 32));
-		lblWelcome.setBounds(388, 151, 211, 86);
+		lblWelcome.setBounds(461, 151, 211, 86);
 		contentPane.add(lblWelcome);
 		
 		JButton btnEnter = new JButton("Entrar");
@@ -62,7 +62,7 @@ public class Main extends JFrame {
 				dispose();
 			}
 		});
-		btnEnter.setBounds(415, 248, 148, 31);
+		btnEnter.setBounds(487, 248, 148, 31);
 		contentPane.add(btnEnter);
 		
 		JButton btnExit = new JButton("Sair");
@@ -71,7 +71,7 @@ public class Main extends JFrame {
 				System.exit(0);
 			}
 		});
-		btnExit.setBounds(415, 364, 148, 31);
+		btnExit.setBounds(487, 354, 148, 31);
 		contentPane.add(btnExit);
 		
 		JButton btnCredits = new JButton("Cr\u00E9ditos");
@@ -83,7 +83,7 @@ public class Main extends JFrame {
 						+ "Mateus Massami Ribeiro - Desenvolvedor e engenheiro de software");
 			}
 		});
-		btnCredits.setBounds(415, 308, 148, 31);
+		btnCredits.setBounds(487, 301, 148, 31);
 		contentPane.add(btnCredits);
 	}
 }

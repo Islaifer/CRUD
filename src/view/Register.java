@@ -29,18 +29,18 @@ public class Register extends JFrame {
 	 */
 	public Register() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1024, 517);
+		setBounds(100, 100, 1127, 517);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JTextPane textName = new JTextPane();
-		textName.setBounds(45, 57, 342, 26);
+		textName.setBounds(45, 57, 436, 26);
 		contentPane.add(textName);
 		
 		JTextPane textFantasyName = new JTextPane();
-		textFantasyName.setBounds(489, 57, 471, 26);
+		textFantasyName.setBounds(549, 57, 521, 26);
 		contentPane.add(textFantasyName);
 		
 		JLabel lblName = new JLabel("Nome da empresa");
@@ -48,7 +48,7 @@ public class Register extends JFrame {
 		contentPane.add(lblName);
 		
 		JLabel lblFantasyName = new JLabel("Nome Fantasia");
-		lblFantasyName.setBounds(488, 37, 113, 20);
+		lblFantasyName.setBounds(549, 37, 113, 20);
 		contentPane.add(lblFantasyName);
 		
 		JTextPane textCNPJ = new JTextPane();
@@ -60,7 +60,7 @@ public class Register extends JFrame {
 		contentPane.add(lblCNPJ);
 		
 		JTextPane textCNAE = new JTextPane();
-		textCNAE.setBounds(273, 122, 148, 26);
+		textCNAE.setBounds(273, 122, 176, 26);
 		contentPane.add(textCNAE);
 		
 		JLabel lblCNAE = new JLabel("CNAE");
@@ -68,19 +68,19 @@ public class Register extends JFrame {
 		contentPane.add(lblCNAE);
 		
 		JTextPane textNIRE = new JTextPane();
-		textNIRE.setBounds(449, 122, 157, 26);
+		textNIRE.setBounds(475, 122, 157, 26);
 		contentPane.add(textNIRE);
 		
 		JLabel lblNIRE = new JLabel("NIRE");
-		lblNIRE.setBounds(449, 102, 69, 20);
+		lblNIRE.setBounds(475, 102, 69, 20);
 		contentPane.add(lblNIRE);
 		
 		JTextPane textCCM = new JTextPane();
-		textCCM.setBounds(646, 122, 148, 26);
+		textCCM.setBounds(671, 122, 195, 26);
 		contentPane.add(textCCM);
 		
 		JLabel lblCCM = new JLabel("CCM");
-		lblCCM.setBounds(646, 102, 69, 20);
+		lblCCM.setBounds(671, 102, 69, 20);
 		contentPane.add(lblCCM);
 		
 		JLabel lblISS = new JLabel("ISS");
@@ -92,15 +92,15 @@ public class Register extends JFrame {
 		contentPane.add(textISS);
 		
 		JTextPane textTFE = new JTextPane();
-		textTFE.setBounds(822, 122, 128, 26);
+		textTFE.setBounds(894, 122, 176, 26);
 		contentPane.add(textTFE);
 		
 		JLabel lblTFE = new JLabel("TFE");
-		lblTFE.setBounds(822, 102, 69, 20);
+		lblTFE.setBounds(894, 102, 69, 20);
 		contentPane.add(lblTFE);
 		
 		JLabel lblStaReg = new JLabel("Inscri\u00E7\u00E3o Estadual");
-		lblStaReg.setBounds(757, 167, 148, 20);
+		lblStaReg.setBounds(805, 167, 148, 20);
 		contentPane.add(lblStaReg);
 		
 		JTextPane textLegNat = new JTextPane();
@@ -112,19 +112,19 @@ public class Register extends JFrame {
 		contentPane.add(lblLegNat);
 		
 		JTextPane textTaxReg = new JTextPane();
-		textTaxReg.setBounds(354, 187, 176, 26);
+		textTaxReg.setBounds(364, 187, 176, 26);
 		contentPane.add(textTaxReg);
 		
 		JLabel lblTaxReg = new JLabel("Regime de tributa\u00E7\u00E3o");
-		lblTaxReg.setBounds(354, 164, 176, 20);
+		lblTaxReg.setBounds(364, 167, 176, 20);
 		contentPane.add(lblTaxReg);
 		
 		JTextPane textRegOff = new JTextPane();
-		textRegOff.setBounds(545, 187, 197, 26);
+		textRegOff.setBounds(570, 187, 197, 26);
 		contentPane.add(textRegOff);
 		
 		JLabel lblRegOff = new JLabel("Registro no Cartorio");
-		lblRegOff.setBounds(545, 167, 197, 20);
+		lblRegOff.setBounds(570, 167, 197, 20);
 		contentPane.add(lblRegOff);
 		
 		JTextPane textStreet = new JTextPane();
@@ -132,7 +132,7 @@ public class Register extends JFrame {
 		contentPane.add(textStreet);
 		
 		JTextPane textPane_1 = new JTextPane();
-		textPane_1.setBounds(757, 187, 193, 26);
+		textPane_1.setBounds(805, 187, 265, 26);
 		contentPane.add(textPane_1);
 		
 		JLabel lblStreet = new JLabel("Rua");
@@ -148,15 +148,15 @@ public class Register extends JFrame {
 		contentPane.add(lblHNumber);
 		
 		JTextPane textComp = new JTextPane();
-		textComp.setBounds(746, 249, 120, 26);
+		textComp.setBounds(913, 249, 157, 26);
 		contentPane.add(textComp);
 		
 		JLabel lblComp = new JLabel("Complemento");
-		lblComp.setBounds(746, 229, 120, 20);
+		lblComp.setBounds(914, 224, 120, 20);
 		contentPane.add(lblComp);
 		
 		JButton btnSave = new JButton("Salvar");
-		btnSave.setBounds(835, 397, 115, 29);
+		btnSave.setBounds(955, 398, 115, 29);
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				InsaneMain main = new InsaneMain();
@@ -178,7 +178,7 @@ public class Register extends JFrame {
 		contentPane.add(btnAddPat);
 		
 		JTextPane textCity = new JTextPane();
-		textCity.setBounds(45, 311, 220, 26);
+		textCity.setBounds(45, 311, 207, 26);
 		contentPane.add(textCity);
 		
 		JLabel lblCity = new JLabel("Cidade");
@@ -186,19 +186,35 @@ public class Register extends JFrame {
 		contentPane.add(lblCity);
 		
 		JTextPane textCounty = new JTextPane();
-		textCounty.setBounds(297, 311, 276, 26);
+		textCounty.setBounds(286, 311, 277, 26);
 		contentPane.add(textCounty);
 		
 		JLabel lblCounty = new JLabel("Municipio");
-		lblCounty.setBounds(297, 291, 276, 20);
+		lblCounty.setBounds(286, 291, 196, 20);
 		contentPane.add(lblCounty);
 		
 		JTextPane textCEP = new JTextPane();
-		textCEP.setBounds(601, 311, 265, 26);
+		textCEP.setBounds(610, 311, 157, 26);
 		contentPane.add(textCEP);
 		
 		JLabel lblCEP = new JLabel("CEP");
-		lblCEP.setBounds(601, 291, 69, 20);
+		lblCEP.setBounds(610, 286, 69, 20);
 		contentPane.add(lblCEP);
+		
+		JTextPane textNeigh = new JTextPane();
+		textNeigh.setBounds(718, 249, 185, 26);
+		contentPane.add(textNeigh);
+		
+		JLabel lblNeigh = new JLabel("Bairro");
+		lblNeigh.setBounds(718, 232, 46, 14);
+		contentPane.add(lblNeigh);
+		
+		JTextPane textTel = new JTextPane();
+		textTel.setBounds(805, 311, 265, 26);
+		contentPane.add(textTel);
+		
+		JLabel lblTel = new JLabel("Telefone");
+		lblTel.setBounds(805, 294, 61, 14);
+		contentPane.add(lblTel);
 	}
 }

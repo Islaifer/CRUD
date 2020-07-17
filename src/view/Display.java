@@ -36,14 +36,14 @@ public class Display extends JFrame {
 	 */
 	public Display() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1024, 517);
+		setBounds(100, 100, 1127, 517);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JPanel panelData = new JPanel();
-		panelData.setBounds(15, 0, 972, 118);
+		panelData.setBounds(15, 0, 1086, 118);
 		contentPane.add(panelData);
 		panelData.setLayout(null);
 		
@@ -52,30 +52,30 @@ public class Display extends JFrame {
 		panelData.add(lblName);
 		
 		JLabel lblFantasyName = new JLabel("Fantasia");
-		lblFantasyName.setBounds(282, 16, 69, 20);
+		lblFantasyName.setBounds(315, 16, 69, 20);
 		panelData.add(lblFantasyName);
 		
 		JTextPane textFantasyName = new JTextPane();
 		textFantasyName.setEditable(false);
-		textFantasyName.setBounds(282, 36, 256, 26);
+		textFantasyName.setBounds(314, 36, 256, 26);
 		panelData.add(textFantasyName);
 		
-		JLabel lblPhone = new JLabel("Felefone");
-		lblPhone.setBounds(571, 16, 69, 20);
+		JLabel lblPhone = new JLabel("Telefone");
+		lblPhone.setBounds(620, 16, 69, 20);
 		panelData.add(lblPhone);
 		
 		textPhone = new JTextPane();
 		textPhone.setEditable(false);
-		textPhone.setBounds(571, 36, 140, 26);
+		textPhone.setBounds(622, 36, 140, 26);
 		panelData.add(textPhone);
 		
 		JLabel lblNewLabel = new JLabel("Email");
-		lblNewLabel.setBounds(745, 16, 69, 20);
+		lblNewLabel.setBounds(823, 16, 69, 20);
 		panelData.add(lblNewLabel);
 		
 		JTextPane textEmail = new JTextPane();
 		textEmail.setEditable(false);
-		textEmail.setBounds(745, 36, 212, 26);
+		textEmail.setBounds(823, 36, 212, 26);
 		panelData.add(textEmail);
 		
 		JTextPane textName = new JTextPane();
@@ -93,33 +93,33 @@ public class Display extends JFrame {
 		panelData.add(textAddresss);
 		
 		JLabel lblNeig = new JLabel("Bairro");
-		lblNeig.setBounds(341, 66, 69, 20);
+		lblNeig.setBounds(393, 66, 69, 20);
 		panelData.add(lblNeig);
 		
 		JTextPane textNeig = new JTextPane();
 		textNeig.setEditable(false);
-		textNeig.setBounds(341, 86, 199, 26);
+		textNeig.setBounds(393, 86, 199, 26);
 		panelData.add(textNeig);
 		
 		JLabel lblCEP = new JLabel("CEP");
-		lblCEP.setBounds(571, 66, 69, 20);
+		lblCEP.setBounds(647, 66, 69, 20);
 		panelData.add(lblCEP);
 		
 		JTextPane textCEP = new JTextPane();
 		textCEP.setEditable(false);
-		textCEP.setBounds(571, 86, 167, 26);
+		textCEP.setBounds(647, 86, 167, 26);
 		panelData.add(textCEP);
 		
 		JTextPane textCity = new JTextPane();
-		textCity.setBounds(769, 86, 188, 26);
+		textCity.setBounds(847, 86, 188, 26);
 		panelData.add(textCity);
 		
 		JLabel lblCity = new JLabel("Cidade/UF");
-		lblCity.setBounds(775, 66, 125, 20);
+		lblCity.setBounds(847, 66, 125, 20);
 		panelData.add(lblCity);
 		
 		JPanel panelLegaci = new JPanel();
-		panelLegaci.setBounds(15, 134, 972, 129);
+		panelLegaci.setBounds(15, 134, 1086, 129);
 		contentPane.add(panelLegaci);
 		panelLegaci.setLayout(null);
 		
@@ -133,40 +133,39 @@ public class Display extends JFrame {
 		panelLegaci.add(textCNPJ);
 		
 		JLabel lblCNAE = new JLabel("CNAE");
-		lblCNAE.setBounds(160, 15, 69, 20);
+		lblCNAE.setBounds(171, 15, 69, 20);
 		panelLegaci.add(lblCNAE);
 		
 		JTextPane textCNAE = new JTextPane();
 		textCNAE.setEditable(false);
-		textCNAE.setBounds(160, 35, 119, 26);
+		textCNAE.setBounds(170, 35, 119, 26);
 		panelLegaci.add(textCNAE);
 		
 		JLabel lblNIRE = new JLabel("NIRE");
-		lblNIRE.setEnabled(false);
-		lblNIRE.setBounds(294, 15, 69, 20);
+		lblNIRE.setBounds(320, 15, 69, 20);
 		panelLegaci.add(lblNIRE);
 		
 		JTextPane textNIRE = new JTextPane();
 		textNIRE.setEditable(false);
-		textNIRE.setBounds(294, 35, 119, 26);
+		textNIRE.setBounds(320, 35, 119, 26);
 		panelLegaci.add(textNIRE);
 		
 		JLabel lblCCM = new JLabel("CCM");
-		lblCCM.setBounds(428, 15, 69, 20);
+		lblCCM.setBounds(459, 15, 69, 20);
 		panelLegaci.add(lblCCM);
 		
 		JTextPane textCCM = new JTextPane();
 		textCCM.setEditable(false);
-		textCCM.setBounds(428, 35, 119, 26);
+		textCCM.setBounds(459, 35, 119, 26);
 		panelLegaci.add(textCCM);
 		
 		JLabel lblTFE = new JLabel("TFE");
-		lblTFE.setBounds(815, 67, 69, 20);
+		lblTFE.setBounds(889, 67, 69, 20);
 		panelLegaci.add(lblTFE);
 		
 		JTextPane textTFE = new JTextPane();
 		textTFE.setEditable(false);
-		textTFE.setBounds(815, 87, 82, 26);
+		textTFE.setBounds(890, 87, 139, 26);
 		panelLegaci.add(textTFE);
 		
 		JLabel lblLegNat = new JLabel("Natureza Juridica");
@@ -179,70 +178,70 @@ public class Display extends JFrame {
 		panelLegaci.add(textLegNat);
 		
 		JLabel lblStaReg = new JLabel("Inscri\u00E7\u00E3o Estadual");
-		lblStaReg.setBounds(562, 15, 130, 20);
+		lblStaReg.setBounds(600, 15, 130, 20);
 		panelLegaci.add(lblStaReg);
 		
 		JTextPane textStaReg = new JTextPane();
 		textStaReg.setEditable(false);
-		textStaReg.setBounds(563, 35, 129, 26);
+		textStaReg.setBounds(601, 35, 129, 26);
 		panelLegaci.add(textStaReg);
 		
 		JTextPane textShaCap = new JTextPane();
 		textShaCap.setEditable(false);
-		textShaCap.setBounds(160, 87, 145, 26);
+		textShaCap.setBounds(170, 87, 145, 26);
 		panelLegaci.add(textShaCap);
 		
 		JLabel lblShaCap = new JLabel("Capital Social");
-		lblShaCap.setBounds(160, 67, 100, 20);
+		lblShaCap.setBounds(167, 67, 100, 20);
 		panelLegaci.add(lblShaCap);
 		
 		JTextPane textTaxPost = new JTextPane();
 		textTaxPost.setEditable(false);
-		textTaxPost.setBounds(320, 87, 145, 26);
+		textTaxPost.setBounds(342, 87, 145, 26);
 		panelLegaci.add(textTaxPost);
 		
 		JLabel lblTaxPost = new JLabel("Posto Fiscal");
-		lblTaxPost.setBounds(320, 67, 130, 20);
+		lblTaxPost.setBounds(342, 67, 130, 20);
 		panelLegaci.add(lblTaxPost);
 		
 		JTextPane textActSta = new JTextPane();
 		textActSta.setEditable(false);
-		textActSta.setBounds(805, 35, 139, 26);
+		textActSta.setBounds(890, 35, 139, 26);
 		panelLegaci.add(textActSta);
 		
 		JLabel lblActSta = new JLabel("Inicio da Atividade");
-		lblActSta.setBounds(805, 15, 139, 20);
+		lblActSta.setBounds(890, 15, 139, 20);
 		panelLegaci.add(lblActSta);
 		
 		JTextPane textTaxReg = new JTextPane();
 		textTaxReg.setEditable(false);
-		textTaxReg.setBounds(480, 87, 151, 26);
+		textTaxReg.setBounds(514, 87, 151, 26);
 		panelLegaci.add(textTaxReg);
 		
 		JLabel lblTaxReg = new JLabel("Regime de tributa\u00E7\u00E3o");
-		lblTaxReg.setBounds(480, 64, 176, 20);
+		lblTaxReg.setBounds(514, 67, 176, 20);
 		panelLegaci.add(lblTaxReg);
 		
 		JTextPane textRegOff = new JTextPane();
 		textRegOff.setEditable(false);
-		textRegOff.setBounds(646, 87, 154, 26);
+		textRegOff.setBounds(689, 87, 154, 26);
 		panelLegaci.add(textRegOff);
 		
 		JLabel lblRegOff = new JLabel("Registro no Cartorio");
-		lblRegOff.setBounds(646, 67, 156, 20);
+		lblRegOff.setBounds(689, 67, 156, 20);
 		panelLegaci.add(lblRegOff);
 		
 		JTextPane textISS = new JTextPane();
 		textISS.setEditable(false);
-		textISS.setBounds(707, 35, 82, 26);
+		textISS.setBounds(759, 35, 82, 26);
 		panelLegaci.add(textISS);
 		
 		JLabel lblISS = new JLabel("ISS");
-		lblISS.setBounds(707, 15, 37, 20);
+		lblISS.setBounds(763, 15, 37, 20);
 		panelLegaci.add(lblISS);
 		
 		panelPatners = new JPanel();
-		panelPatners.setBounds(15, 274, 972, 142);
+		panelPatners.setBounds(15, 274, 1086, 142);
 		contentPane.add(panelPatners);
 		panelPatners.setLayout(null);
 		
@@ -275,7 +274,7 @@ public class Display extends JFrame {
 		
 		JTextPane textPCNH = new JTextPane();
 		textPCNH.setEditable(false);
-		textPCNH.setBounds(466, 20, 76, 20);
+		textPCNH.setBounds(466, 20, 97, 20);
 		panelPatners.add(textPCNH);
 		
 		JLabel lblPCNH = new JLabel("CNH");
@@ -283,30 +282,30 @@ public class Display extends JFrame {
 		panelPatners.add(lblPCNH);
 		
 		JLabel lblPPIS = new JLabel("PIS");
-		lblPPIS.setBounds(550, 3, 46, 14);
+		lblPPIS.setBounds(573, 3, 46, 14);
 		panelPatners.add(lblPPIS);
 		
 		JTextPane textPPIS = new JTextPane();
 		textPPIS.setEditable(false);
-		textPPIS.setBounds(552, 20, 95, 20);
+		textPPIS.setBounds(573, 20, 95, 20);
 		panelPatners.add(textPPIS);
 		
 		JTextPane textPDatBir = new JTextPane();
 		textPDatBir.setEditable(false);
-		textPDatBir.setBounds(657, 20, 95, 20);
+		textPDatBir.setBounds(865, 110, 95, 20);
 		panelPatners.add(textPDatBir);
 		
 		JLabel lblPDatBir = new JLabel("Data de Nascimento");
-		lblPDatBir.setBounds(657, 3, 116, 14);
+		lblPDatBir.setBounds(864, 98, 116, 14);
 		panelPatners.add(lblPDatBir);
 		
 		JLabel lblPVotReg = new JLabel("Titulo de Eleitor");
-		lblPVotReg.setBounds(763, 3, 76, 14);
+		lblPVotReg.setBounds(792, 3, 104, 14);
 		panelPatners.add(lblPVotReg);
 		
 		JTextPane textPVotReg = new JTextPane();
 		textPVotReg.setEditable(false);
-		textPVotReg.setBounds(762, 20, 102, 20);
+		textPVotReg.setBounds(792, 20, 153, 20);
 		panelPatners.add(textPVotReg);
 		
 		JLabel lblPAddress = new JLabel("Endere\u00E7o");
@@ -337,80 +336,80 @@ public class Display extends JFrame {
 		panelPatners.add(textPCEP);
 		
 		JTextPane textPCity = new JTextPane();
-		textPCity.setBounds(763, 61, 188, 26);
+		textPCity.setBounds(743, 61, 188, 26);
 		panelPatners.add(textPCity);
 		
 		JLabel lblPCity = new JLabel("Cidade/UF");
-		lblPCity.setBounds(769, 41, 125, 20);
+		lblPCity.setBounds(743, 41, 125, 20);
 		panelPatners.add(lblPCity);
 		
 		JTextPane textPPosition = new JTextPane();
 		textPPosition.setEditable(false);
-		textPPosition.setBounds(874, 20, 77, 20);
+		textPPosition.setBounds(955, 20, 77, 20);
 		panelPatners.add(textPPosition);
 		
 		JLabel lblPPosition = new JLabel("Posi\u00E7\u00E3o ");
-		lblPPosition.setBounds(874, 3, 46, 14);
+		lblPPosition.setBounds(955, 3, 77, 14);
 		panelPatners.add(lblPPosition);
 		
 		JTextPane textPDatIssRG = new JTextPane();
 		textPDatIssRG.setEditable(false);
-		textPDatIssRG.setBounds(10, 110, 58, 20);
+		textPDatIssRG.setBounds(941, 61, 125, 26);
 		panelPatners.add(textPDatIssRG);
 		
-		JLabel lblPDatIssRG = new JLabel("Data do RG");
-		lblPDatIssRG.setBounds(10, 90, 58, 14);
+		JLabel lblPDatIssRG = new JLabel("Data de emiss\u00E3o do RG");
+		lblPDatIssRG.setBounds(941, 44, 135, 14);
 		panelPatners.add(lblPDatIssRG);
 		
-		JLabel lblPEmitOrgRG = new JLabel("Emissor Rg");
-		lblPEmitOrgRG.setBounds(78, 90, 58, 14);
+		JLabel lblPEmitOrgRG = new JLabel("Org\u00E3o emissor Rg");
+		lblPEmitOrgRG.setBounds(10, 90, 142, 14);
 		panelPatners.add(lblPEmitOrgRG);
 		
 		JTextPane textPEmitOrgRG = new JTextPane();
 		textPEmitOrgRG.setEditable(false);
-		textPEmitOrgRG.setBounds(78, 110, 55, 20);
+		textPEmitOrgRG.setBounds(10, 110, 139, 20);
 		panelPatners.add(textPEmitOrgRG);
 		
 		JTextPane textPane = new JTextPane();
 		textPane.setEditable(false);
-		textPane.setBounds(478, 110, 223, 20);
+		textPane.setBounds(392, 110, 223, 20);
 		panelPatners.add(textPane);
 		
 		JLabel lblPMotName = new JLabel("Nome da M\u00E3e");
-		lblPMotName.setBounds(478, 90, 77, 14);
+		lblPMotName.setBounds(392, 90, 77, 14);
 		panelPatners.add(lblPMotName);
 		
 		JTextPane textPDadName = new JTextPane();
-		textPDadName.setBounds(721, 110, 230, 20);
+		textPDadName.setBounds(625, 110, 230, 20);
 		panelPatners.add(textPDadName);
 		
 		JLabel lblPDadName = new JLabel("Nome do Pai");
-		lblPDadName.setBounds(721, 90, 60, 14);
+		lblPDadName.setBounds(625, 90, 97, 14);
 		panelPatners.add(lblPDadName);
 		
 		JLabel lblPNatural = new JLabel("Naturalidade");
-		lblPNatural.setBounds(346, 90, 76, 14);
+		lblPNatural.setBounds(277, 90, 76, 14);
 		panelPatners.add(lblPNatural);
 		
 		JTextPane textPNatural = new JTextPane();
 		textPNatural.setEditable(false);
-		textPNatural.setBounds(345, 110, 105, 20);
+		textPNatural.setBounds(277, 110, 105, 20);
 		panelPatners.add(textPNatural);
 		
 		JLabel lblPMarSta = new JLabel("Estado Civil");
-		lblPMarSta.setBounds(146, 90, 69, 14);
+		lblPMarSta.setBounds(681, 3, 83, 14);
 		panelPatners.add(lblPMarSta);
 		
 		JTextPane textPMarSta = new JTextPane();
-		textPMarSta.setBounds(143, 110, 86, 20);
+		textPMarSta.setBounds(678, 20, 86, 20);
 		panelPatners.add(textPMarSta);
 		
 		JTextPane textPParticipation = new JTextPane();
-		textPParticipation.setBounds(239, 110, 96, 20);
+		textPParticipation.setBounds(159, 110, 96, 20);
 		panelPatners.add(textPParticipation);
 		
 		JLabel lblPParticipation = new JLabel("Participa\u00E7\u00E3o");
-		lblPParticipation.setBounds(239, 90, 76, 14);
+		lblPParticipation.setBounds(159, 90, 76, 14);
 		panelPatners.add(lblPParticipation);
 		
 		JButton btnPrint = new JButton("Imprimir");

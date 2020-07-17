@@ -29,7 +29,7 @@ public class InsaneMain extends JFrame {
 	 */
 	public InsaneMain() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1024, 517);
+		setBounds(100, 100, 1127, 517);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -43,11 +43,11 @@ public class InsaneMain extends JFrame {
 		table.setModel(dataModel);
 		contentPane.add(table);
 		JScrollPane scroll = new JScrollPane(table);
-		scroll.setBounds(81, 75, 836, 392);
+		scroll.setBounds(10, 75, 1091, 392);
 		contentPane.add(scroll);
 		
 		JButton btnAddEnterprise = new JButton("Adicionar Empresa");
-		btnAddEnterprise.setBounds(759, 41, 158, 23);
+		btnAddEnterprise.setBounds(943, 41, 158, 23);
 		btnAddEnterprise.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				Register register = new Register();
@@ -58,7 +58,7 @@ public class InsaneMain extends JFrame {
 		contentPane.add(btnAddEnterprise);
 		
 		JComboBox<String> filter = new JComboBox<String>();
-		filter.setBounds(81, 42, 171, 20);
+		filter.setBounds(10, 44, 171, 20);
 		filter.addItem("All");
 		contentPane.add(filter);
 		
@@ -70,7 +70,7 @@ public class InsaneMain extends JFrame {
 			dispose();
 			}
 		});
-		btnDisplay.setBounds(593, 41, 140, 23);
+		btnDisplay.setBounds(793, 41, 140, 23);
 		contentPane.add(btnDisplay);
 		
 		JButton btnEdit = new JButton("Editar Cadastro");
@@ -81,12 +81,8 @@ public class InsaneMain extends JFrame {
 				dispose();
 			}
 		});
-		btnEdit.setBounds(426, 41, 140, 23);
+		btnEdit.setBounds(643, 41, 140, 23);
 		contentPane.add(btnEdit);
-		
-		
-		
-		
 		
 	}
 }
