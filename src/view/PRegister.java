@@ -38,7 +38,7 @@ public class PRegister extends JFrame {
 		
 		JPanel panelPatners = new JPanel();
 		panelPatners.setLayout(null);
-		panelPatners.setBounds(26, 37, 972, 142);
+		panelPatners.setBounds(10, 24, 972, 142);
 		contentPane.add(panelPatners);
 		
 		JTextPane textPName = new JTextPane();
