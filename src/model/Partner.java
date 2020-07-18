@@ -23,9 +23,11 @@ public class Partner {
 	private String nat;
 	private String position;
 
-	public Partner(String namePartner, String rg, String cpf, String cnh, String pis, Date dateB, String adrress,
-			String neigh, String cep, String city, String nameDad, String nameMother, String voter, Date dateRg,
-			String emitterRg, String status, String participation, String nat, String position) {
+	//constructor with parameters
+	public Partner(String namePartner, String rg, String cpf, String cnh, String pis, Date dateB, 
+			String adrress, String neigh, String cep, String city, String nameDad, 
+			String nameMother, String voter, Date dateRg, String emitterRg, String status, 
+			String participation, String nat, String position) {
 		this.namePartner = namePartner;
 		this.rg = rg;
 		this.cpf = cpf;
@@ -47,9 +49,13 @@ public class Partner {
 		this.position = position;
 
 	}
+	
+	//constructor no parameters
 	public Partner() {
 		super();
 	}
+	
+	//getters and setters methods 
 	public String getNamePartner() {
 		return namePartner;
 	}
