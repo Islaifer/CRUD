@@ -1,6 +1,7 @@
 package model;
 
 public class Enterprise {
+	private int id;
 	private String nameEnterprise;
 	private String nameFantasy;
 	private String tfe;
@@ -24,11 +25,12 @@ public class Enterprise {
 	private String email;
 	
 	//constructor with parameters
-	public Enterprise(String nameEnterprise, String nameFantasy, String tfe, String cnpj,
+	public Enterprise(int id, String nameEnterprise, String nameFantasy, String tfe, String cnpj,
 			 String cnae, String nire, String ccm, String estadualSubscribe, String iss,
 			 String juridicalNature, String tributs, String registry, String neigh,
 			 String street, String houseNumber, String complement, String cep,
 			 String city, String county, String tel, String email) {
+		this.id = id;
 		this.nameEnterprise = nameEnterprise;
 		this.nameFantasy = nameFantasy;
 		this.tfe = tfe;
@@ -51,13 +53,21 @@ public class Enterprise {
 		this.tel = tel;
 		this.email = email;
 	}
-	
+
 	//constructor no parameters
 	public Enterprise() {
 		super();
 	}
 
 	//getters and setters methods 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
 	public String getNameEnterprise() {
 		return nameEnterprise;
 	}
