@@ -217,7 +217,7 @@ public class Edit extends JFrame {
 		contentPane.add(textTel);
 		
 		JLabel lblTel = new JLabel("Telefone");
-		lblTel.setBounds(595, 294, 46, 14);
+		lblTel.setBounds(595, 294, 93, 14);
 		contentPane.add(lblTel);
 		
 		JTextPane textPane_1 = new JTextPane();
