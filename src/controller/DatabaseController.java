@@ -11,7 +11,7 @@ public class DatabaseController {
 			if(dir.mkdir()) {
 				System.out.println("Dir create success!");
 			}else {
-				System.err.println("Error in dir create!");
+				System.err.println("Error on dir create!");
 			}
 		}
 	}

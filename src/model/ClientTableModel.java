@@ -1,8 +1,9 @@
 package model;
 
-import java.util.List;
 
 import javax.swing.table.AbstractTableModel;
+
+import controller.EnterpriseController;
 
 public class ClientTableModel extends AbstractTableModel {
 	
@@ -10,10 +11,10 @@ public class ClientTableModel extends AbstractTableModel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private List<Object> list;
+	private EnterpriseController list;
 	private String [] columns = {"1", "2", "3"};
 
-	public ClientTableModel(List<Object> list) {
+	public ClientTableModel(EnterpriseController list) {
 		this.list = list;
 	}
 	
