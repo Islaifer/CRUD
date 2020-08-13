@@ -223,7 +223,7 @@ public class Partner {
 				+ this.pis + ";" + this.dateB + ";" + this.adrress + ";" + this.neigh + ";" + this.cep + ";" + this.city
 				+ ";" + this.nameDad + ";" + this.nameMother + ";" + this.voter + ";" + this.dateRg + ";"
 				+ this.emitterRg + ";" + this.status + ";" + this.participation + ";" + this.nat + ";" + this.position
-				+ ";" + "\n");
+				+ "\n");
 		return retorna;
 	}
 }

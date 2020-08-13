@@ -88,7 +88,7 @@ public class EnterpriseController {
 						";" + this.list.get(s).getEstadualSubscribe() + ";" + this.list.get(s).getIss() +
 						";" + this.list.get(s).getJuridicalNature() + ";" + this.list.get(s).getTributs() +
 						";" + this.list.get(s).getRegistry() + ";" + this.list.get(s).getNeigh() + ";" +
-						";" + this.list.get(s).getNeigh() + ";" + this.list.get(s).getHouseNumber() +
+						";" + this.list.get(s).getStreet() + ";" + this.list.get(s).getHouseNumber() +
 						";" + this.list.get(s).getComplement() + ";" + this.list.get(s).getCep() +
 						";" + this.list.get(s).getCity() + ";" + this.list.get(s).getCounty() +
 						";" + this.list.get(s).getTel() + ";" + this.list.get(s).getEmail() + "\n");

@@ -84,7 +84,7 @@ public class PartnerController {
 						+ this.list.get(s).getVoter() + ";" + this.list.get(s).getDateRg() + ";"
 						+ this.list.get(s).getEmitterRg() + ";" + this.list.get(s).getStatus() + ";"
 						+ this.list.get(s).getParticipation() + ";" + this.list.get(s).getNat() + ";"
-						+ this.list.get(s).getPosition() + ";" + "\n");
+						+ this.list.get(s).getPosition() + "\n");
 				s++;
 			} while (this.list.size() > s + 1);
 			mostra = buffer.toString();

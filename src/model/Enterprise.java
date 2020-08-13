@@ -248,5 +248,28 @@ public class Enterprise {
 		this.email = email;
 	}
 	
-	
+	@Override
+	public String toString() {
+		StringBuffer buffer = new StringBuffer("");
+		String ids = "0";
+		for(int i=0; i<this.idPartners.size(); i++) {
+			buffer.append(idPartners.get(i));
+			buffer.append(",");
+		}
+		if(buffer.length()>0) {
+			ids = buffer.toString();
+		}
+		String retorna = this.id + ";" + ids + ";" + this.nameEnterprise + 
+				";" + this.nameFantasy + ";" + this.tfe + 
+				";" + this.cnpj + ";" + this.cnae + ";" +
+				";" + this.nire + ";" + this.ccm + ";" +
+				";" + this.estadualSubscribe + ";" + this.iss +
+				";" + this.juridicalNature + ";" + this.tributs +
+				";" + this.registry + ";" + this.neigh + ";" +
+				";" + this.street+ ";" + this.houseNumber +
+				";" + this.complement + ";" + this.cep +
+				";" + this.city + ";" + this.county +
+				";" + this.tel + ";" + this.email + "\n";
+		return retorna;
+	}
 }
